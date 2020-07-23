@@ -12,11 +12,8 @@ Another [Cheatsheet](https://video.udacity-data.com/topher/2019/August/5d5a1055_
   
 
 ```
-
 sudo apt-get update
-
 sudo apt-get install postgresql-10.4
-
 ```
 
   
@@ -24,11 +21,8 @@ sudo apt-get install postgresql-10.4
 By default, the postgres user has no password and can hence only connect if ran by the postgres system user. The following command will assign it:
 
 ```
-
 sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
-
 sudo -u postgres psql -c "CREATE DATABASE testdb;"
-
 ```
 
   
@@ -38,9 +32,7 @@ sudo -u postgres psql -c "CREATE DATABASE testdb;"
   
 
 ```
-
 sudo service postgresql start
-
 ```
 
   
@@ -50,9 +42,7 @@ sudo service postgresql start
   
 
 ```
-
 sudo service postgresql stop
-
 ```
 
   
@@ -70,9 +60,7 @@ Default installed user is called postgres i.e. you could initially login with
 sudo -u postgres -i
 ```
 ```
-
 sudo -u <username> -i
-
 ```
 
 e.g. sudo -u bob -i
@@ -82,9 +70,7 @@ e.g. sudo -u bob -i
 ### Create a new database
 
 ```
-
 createdb <database_name>
-
 ```
 
 e.g. createdb mydb
@@ -94,21 +80,15 @@ e.g. createdb mydb
 ### Destroy a database
 
 ```
-
 dropdb <database_name>
-
 ```
 
 e.g. dropdb mydb
 
-  
-
 ### Reset a database
 
 ```
-
 dropdb <database_name> && createdb <database_name>
-
 ```
 
 e.g. dropdb mydb && createdb mydb
