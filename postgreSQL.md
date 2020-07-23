@@ -93,8 +93,6 @@ dropdb <database_name> && createdb <database_name>
 
 e.g. dropdb mydb && createdb mydb
 
-  
-
 Try it yourself!
 
 Gain technical proficiency in managing postgres databases by practicing creating, dropping, and resetting databases. Do this in your terminal, if you successfully installed Postgres on your local computer, or interact with the terminal in this workspace below, which already has Postgres installed.
